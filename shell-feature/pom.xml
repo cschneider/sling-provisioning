@@ -5,5 +5,5 @@
     <artifactId>prov-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
-  <artifactId>feature-shell</artifactId>
+  <artifactId>prov-shell-feature</artifactId>
 </project>

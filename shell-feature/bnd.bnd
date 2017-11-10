@@ -1,0 +1,5 @@
+Require-Capability:\
+    osgi.identity;filter:='(osgi.identity=org.apache.felix.configurator)',\
+    osgi.identity;filter:='(osgi.identity=org.apache.felix.configadmin)',\
+    osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
+    osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.jline)'

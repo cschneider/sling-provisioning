@@ -11,11 +11,6 @@
         <dropwizard.version>3.2.5</dropwizard.version>
     </properties>
 
-    <modules>
-        <module>oak-repo</module>
-        <module>felix-base-repo</module>
-        <module>feature-shell</module>
-    </modules>
 
     <dependencies>
         <dependency>
@@ -86,4 +81,11 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>felix-base-repo</module>
+        <module>oak-repo</module>
+        <module>shell-feature</module>
+        <module>oak-feature</module>
+        <module>sample-app</module>
+    </modules>
 </project>

@@ -1,0 +1,51 @@
+-standalone: ${.}/target/index.xml
+-runsystemcapabilities: ${native_capability}
+
+-runblacklist: \
+	osgi.identity;filter:='(osgi.identity=slf4j.api)',\
+	osgi.identity;filter:='(osgi.identity=osgi.cmpn)'
+
+-runfw: org.apache.felix.framework;version='[5.6.8,5.6.8]'
+-runee: JavaSE-1.8
+
+-runsystempackages: sun.misc,javax.annotation.meta
+
+-runproperties: \
+	org.ops4j.pax.logging.DefaultServiceLog.level=INFO,\
+	repository.home=target
+
+-runrequires: \
+	osgi.identity;filter:='(osgi.identity=prov-shell-feature)',\
+	osgi.identity;filter:='(osgi.identity=prov-oak-feature)'
+-runbundles: \
+	com.google.guava;version='[15.0.0,15.0.1)',\
+	io.dropwizard.metrics.core;version='[3.2.5,3.2.6)',\
+	javax.jcr;version='[2.0.0,2.0.1)',\
+	org.apache.commons.codec;version='[1.5.0,1.5.1)',\
+	org.apache.commons.io;version='[2.5.0,2.5.1)',\
+	org.apache.felix.configadmin;version='[1.9.0,1.9.1)',\
+	org.apache.felix.configurator;version='[0.0.1,0.0.2)',\
+	org.apache.felix.gogo.command;version='[1.0.2,1.0.3)',\
+	org.apache.felix.gogo.jline;version='[1.0.6,1.0.7)',\
+	org.apache.felix.gogo.runtime;version='[1.0.10,1.0.11)',\
+	org.apache.felix.scr;version='[2.0.12,2.0.13)',\
+	org.apache.jackrabbit.jackrabbit-api;version='[2.15.6,2.15.7)',\
+	org.apache.jackrabbit.jackrabbit-data;version='[2.15.6,2.15.7)',\
+	org.apache.jackrabbit.jackrabbit-jcr-commons;version='[2.15.6,2.15.7)',\
+	org.apache.jackrabbit.oak-api;version='[1.7.10,1.7.11)',\
+	org.apache.jackrabbit.oak-blob;version='[1.7.10,1.7.11)',\
+	org.apache.jackrabbit.oak-blob-plugins;version='[1.7.10,1.7.11)',\
+	org.apache.jackrabbit.oak-commons;version='[1.7.10,1.7.11)',\
+	org.apache.jackrabbit.oak-core;version='[1.7.10,1.7.11)',\
+	org.apache.jackrabbit.oak-core-spi;version='[1.7.10,1.7.11)',\
+	org.apache.jackrabbit.oak-lucene;version='[1.7.10,1.7.11)',\
+	org.apache.jackrabbit.oak-query-spi;version='[1.7.10,1.7.11)',\
+	org.apache.jackrabbit.oak-security-spi;version='[1.7.10,1.7.11)',\
+	org.apache.jackrabbit.oak-segment-tar;version='[1.7.10,1.7.11)',\
+	org.apache.jackrabbit.oak-store-document;version='[1.7.10,1.7.11)',\
+	org.apache.jackrabbit.oak-store-spi;version='[1.7.10,1.7.11)',\
+	org.apache.tika.core;version='[1.15.0,1.15.1)',\
+	org.jline;version='[3.2.0,3.2.1)',\
+	prov-oak-feature;version='[1.0.0,1.0.1)',\
+	prov-shell-feature;version='[1.0.0,1.0.1)',\
+	org.ops4j.pax.logging.pax-logging-api;version='[1.7.2,1.7.3)'

@@ -1,0 +1,4 @@
+Require-Capability:\
+    osgi.extender;filter := "(osgi.extender=osgi.configurator)",\
+    osgi.identity;filter:='(osgi.identity=org.apache.jackrabbit.oak-segment-tar)',\
+    osgi.identity;filter:='(osgi.identity=org.apache.jackrabbit.oak-lucene)'

@@ -1,0 +1,5 @@
+{
+    "pid.org.apache.jackrabbit.oak.jcr.osgi.RepositoryManager": {},
+    "pid.org.apache.jackrabbit.oak.segment.SegmentNodeStoreFactory": {},
+    "pid.org.apache.jackrabbit.oak.segment.SegmentNodeStoreService": {}
+}
